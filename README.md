@@ -70,12 +70,12 @@ chmod +x scripts/run-demo.sh
 
 ## Documentation
 
-- **[DEMO.md](./DEMO.md)** - Complete installation and usage guide
-- **[README_guided_demo_observer.md](./README_guided_demo_observer.md)** - Guided Demo (Observer scenario) deep dive
-- **[PITCH.md](./PITCH.md)** - Problem statement, vision, and positioning
-- **[INVESTOR_FAQ.md](./INVESTOR_FAQ.md)** - Frequently asked questions
-- **[docs/ARCHITECTURE.md](./docs/ARCHITECTURE.md)** - Backend/UI/stubs architecture
-- **[docs/SCENARIOS.md](./docs/SCENARIOS.md)** - Technical scenario descriptions
+DEMO.md - Complete installation and usage guide
+README_guided_demo_observer.md - Guided Demo (Observer scenario) deep dive
+PITCH.md - Problem statement, vision, and positioning
+INVESTOR_FAQ.md - Frequently asked questions
+docs/ARCHITECTURE.md - Backend/UI/stubs architecture
+docs/SCENARIOS.md - Technical scenario descriptions
 
 ---
 
