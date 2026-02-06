@@ -1,3 +1,6 @@
+Ecco il README.md completo da copiare e incollare:
+
+```markdown
 # ADE Demo Suite
 
 **A vision demo for an AI-native development control layer**
@@ -47,8 +50,8 @@ This demo presents, in a **scripted and deterministic way**:
 
 ```bash
 # Clone repository
-git clone https://github.com/adecubed/ade-demo_suite
-cd adedemo/projects/demo_github/ade-demo-suite
+git clone https://github.com/adecubed/ade_demo_suite
+cd ade_demo_suite/demo_github/ade-demo-suite
 
 # Install dependencies
 pip install -r backend/requirements.txt
@@ -70,12 +73,12 @@ chmod +x scripts/run-demo.sh
 
 ## Documentation
 
-DEMO.md - Complete installation and usage guide
-README_guided_demo_observer.md - Guided Demo (Observer scenario) deep dive
-PITCH.md - Problem statement, vision, and positioning
-INVESTOR_FAQ.md - Frequently asked questions
-docs/ARCHITECTURE.md - Backend/UI/stubs architecture
-docs/SCENARIOS.md - Technical scenario descriptions
+- **[DEMO.md](./demo_github/ade-demo-suite/DEMO.md)** - Complete installation and usage guide
+- **[README_guided_demo_observer.md](./demo_github/ade-demo-suite/README_guided_demo_observer.md)** - Guided Demo (Observer scenario) deep dive
+- **[PITCH.md](./demo_github/ade-demo-suite/PITCH.md)** - Problem statement, vision, and positioning
+- **[INVESTOR_FAQ.md](./demo_github/ade-demo-suite/INVESTOR_FAQ.md)** - Frequently asked questions
+- **[docs/ARCHITECTURE.md](./demo_github/ade-demo-suite/docs/ARCHITECTURE.md)** - Backend/UI/stubs architecture
+- **[docs/SCENARIOS.md](./demo_github/ade-demo-suite/docs/SCENARIOS.md)** - Technical scenario descriptions
 
 ---
 
