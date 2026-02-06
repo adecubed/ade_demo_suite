@@ -1,0 +1,364 @@
+.console-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+  color: #e5e7eb;
+  background-color: #020617;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  flex-direction: column; /* titolo sopra, tab sotto */
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+header h1 {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #9ca3af;
+}
+.tabs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+/* Bottoni tab */
+.tab-button {
+  padding: 6px 12px;
+  font-size: 12px;
+  border-radius: 999px;
+  border: 1px solid #ffffff;
+  background-color: #020617;
+  color: #9ca3af;
+  cursor: pointer;
+}
+.tab-console {
+  margin-right: 8px;
+}
+.tab-button.active {
+  background-color: #4f46e5;
+  color: #f9fafb;
+  border-color: #4f46e5;
+}
+main {
+  background-color: #020617;
+  border-radius: 12px;
+  border: 1px solid #111827;
+  padding: 16px;
+}
+/* Console */
+.console-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.console-input-row {
+  display: flex;
+  gap: 12px;
+}
+.console-input-row input {
+  flex: 1;
+  padding: 6px 8px;
+  font-size: 12px;
+  border-radius: 8px;
+  border: 1px solid #374151;
+  background-color: #020617;
+  color: #e5e7eb;
+}
+.console-input-row button {
+  padding: 6px 12px;
+  font-size: 12px;
+  border-radius: 8px;
+  border: 1px solid #4f46e5;
+  background-color: #4f46e5;
+  color: #f9fafb;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.console-output,
+.console-history {
+  border-radius: 8px;
+  border: 1px solid #111827;
+  padding: 12px;
+  background-color: #020617;
+}
+.console-output h3,
+.console-history h3,
+.observer-section h3,
+.forge-status h3,
+.memory-write h3,
+.memory-query h3,
+.memory-results h3 {
+  margin: 0 0 8px 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: #9ca3af;
+}
+.placeholder {
+  font-size: 12px;
+  color: #6b7280;
+}
+.error-box {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #7f1d1d;
+  background-color: #450a0a;
+  color: #fecaca;
+  font-size: 12px;
+}
+.console-output pre.ok,
+.forge-status pre.ok {
+  margin: 0;
+  font-size: 12px;
+  color: #d1d5db;
+  white-space: pre-wrap;
+}
+.console-output pre.fail {
+  margin: 0;
+  font-size: 12px;
+  color: #fecaca;
+  white-space: pre-wrap;
+}
+.console-history ul,
+.observer-section ul,
+.memory-results ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+}
+.console-history li,
+.observer-section li,
+.memory-results li {
+  padding: 4px 0;
+  border-bottom: 1px solid #111827;
+}
+.console-history li:last-child,
+.observer-section li:last-child,
+.memory-results li:last-child {
+  border-bottom: none;
+}
+.ts {
+  color: #6b7280;
+  font-family: monospace;
+  font-size: 11px;
+}
+.kind,
+.source {
+  font-weight: 500;
+  color: #e5e7eb;
+}
+/* Observer */
+.observer-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.observer-header {
+  display: flex;
+  justify-content: flex-end;
+}
+.observer-header button {
+  padding: 6px 12px;
+  font-size: 12px;
+  border-radius: 8px;
+  border: 1px solid #4b5563;
+  background-color: #020617;
+  color: #e5e7eb;
+  cursor: pointer;
+}
+.observer-section {
+  border-radius: 8px;
+  border: 1px solid #111827;
+  padding: 12px;
+  background-color: #020617;
+}
+.suggest-title {
+  font-weight: 600;
+  color: #e5e7eb;
+}
+.suggest-desc {
+  font-size: 12px;
+  color: #9ca3af;
+}
+.suggest-action {
+  font-size: 11px;
+  color: #818cf8;
+  margin-top: 4px;
+}
+/* Forge */
+.forge-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.forge-form {
+  border-radius: 8px;
+  border: 1px solid #111827;
+  padding: 12px;
+  background-color: #020617;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.field-row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.field-row label {
+  font-size: 11px;
+  color: #9ca3af;
+}
+.field-row input {
+  padding: 6px 8px;
+  font-size: 12px;
+  border-radius: 8px;
+  border: 1px solid #374151;
+  background-color: #020617;
+  color: #e5e7eb;
+}
+.forge-buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+.forge-buttons button {
+  padding: 6px 12px;
+  font-size: 12px;
+  border-radius: 8px;
+  border: 1px solid #4f46e5;
+  background-color: #4f46e5;
+  color: #f9fafb;
+  cursor: pointer;
+}
+.forge-status {
+  border-radius: 8px;
+  border: 1px solid #111827;
+  padding: 12px;
+  background-color: #020617;
+}
+/* Memory */
+.memory-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.memory-write,
+.memory-query,
+.memory-results {
+  border-radius: 8px;
+  border: 1px solid #111827;
+  padding: 12px;
+  background-color: #020617;
+}
+.memory-write .field-row,
+.memory-query .field-row {
+  margin-bottom: 8px;
+}
+.memory-write button,
+.memory-query button {
+  padding: 6px 12px;
+  font-size: 12px;
+  border-radius: 8px;
+  border: 1px solid #4f46e5;
+  background-color: #4f46e5;
+  color: #f9fafb;
+  cursor: pointer;
+}
+.memory-key {
+  font-weight: 600;
+  color: #e5e7eb;
+}
+.memory-content {
+  font-size: 12px;
+  color: #d1d5db;
+}
+.memory-tags,
+.memory-ts {
+  font-size: 11px;
+  color: #6b7280;
+}
+/* Override specifico per i campi della Memory tab */
+.memory-write input,
+.memory-write textarea,
+.memory-query input {
+  background-color: #000000;
+  border: 1px solid #374151;
+  color: #e5e7eb;
+}
+.demo-status {
+  margin-top: 4px;
+  font-size: 11px;
+  color: #9ca3af;
+}
+/* Chat tab */
+.chat-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.chat-log {
+  border-radius: 8px;
+  border: 1px solid #111827;
+  padding: 12px;
+  background-color: #020617;
+  max-height: 360px;
+  overflow-y: auto;
+}
+.chat-message {
+  margin-bottom: 8px;
+}
+.chat-message:last-child {
+  margin-bottom: 0;
+}
+.chat-role {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #9ca3af;
+  margin-bottom: 2px;
+}
+.chat-user .chat-role {
+  color: #60a5fa;
+}
+.chat-assistant .chat-role {
+  color: #a855f7;
+}
+.chat-content p {
+  margin: 0 0 2px 0;
+  font-size: 12px;
+  color: #e5e7eb;
+}
+.chat-input-row {
+  display: flex;
+  gap: 8px;
+  align-items: flex-end;
+}
+.chat-input-row textarea {
+  flex: 1;
+  min-height: 60px;
+  max-height: 120px;
+  padding: 6px 8px;
+  font-size: 12px;
+  border-radius: 8px;
+  border: 1px solid #374151;
+  background-color: #000000;
+  color: #e5e7eb;
+  resize: vertical;
+}
+.chat-input-row button {
+  padding: 6px 12px;
+  font-size: 12px;
+  border-radius: 8px;
+  border: 1px solid #4f46e5;
+  background-color: #4f46e5;
+  color: #f9fafb;
+  cursor: pointer;
+  white-space: nowrap;
+}

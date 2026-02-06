@@ -1,0 +1,68 @@
+{
+  "id": "scenario0_chat_approve",
+  "title": "Chat → Approve/Reject → Execution → Memory",
+  "description": "Mostra il loop ADE: intent → piano → approvazione umana → esecuzione → memoria.",
+  "steps": [
+    {
+      "type": "chat_message",
+      "role": "user",
+      "content": "Voglio una mini routine per fare il backup della config ADE ogni sera."
+    },
+    {
+      "type": "chat_message",
+      "role": "assistant",
+      "content": "[DEMO] Posso proporti un piano in 3 step per automatizzare il backup.",
+      "pending_plan_id": "scenario0_backup_plan"
+    },
+    {
+      "type": "user_decision",
+      "scope": "step",
+      "step_id": "step1",
+      "action": "approve"
+    },
+    {
+      "type": "execution_result",
+      "step_id": "step1",
+      "status": "done",
+      "console_output": "backup script created"
+    },
+    {
+      "type": "user_decision",
+      "scope": "step",
+      "step_id": "step2",
+      "action": "reject",
+      "alternative_suggestion": "[DEMO] Invece di schedulare subito, possiamo prima validare lo script per qualche giorno."
+    },
+    {
+      "type": "user_decision",
+      "scope": "step",
+      "step_id": "step3",
+      "action": "approve"
+    },
+    {
+      "type": "execution_result",
+      "step_id": "step3",
+      "status": "done",
+      "memory_write": {
+        "key": "decision.backup_policy",
+        "content": "Backup ADE ogni sera alle 23:00 via script demo.",
+        "tags": ["demo", "decision", "backup"]
+      }
+    },
+    {
+      "type": "chat_message",
+      "role": "assistant",
+      "content": "[DEMO] Ho registrato in memoria la decisione sulla policy di backup. Vuoi che la richiamiamo tra qualche minuto per verificare?"
+    },
+    {
+      "type": "chat_message",
+      "role": "user",
+      "content": "Ricordami qual era la decisione sul backup ADE."
+    },
+    {
+      "type": "memory_recall",
+      "query": "decision backup ADE",
+      "result_key": "decision.backup_policy"
+    }
+  ]
+}

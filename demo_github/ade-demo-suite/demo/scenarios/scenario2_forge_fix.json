@@ -1,0 +1,21 @@
+{
+  "id": "scenario2_forge_fix",
+  "title": "Forge plan: stabilizzare la configurazione",
+  "description": "Mostra un piano Forge demo a 2 step per stabilizzare config.yaml.",
+  "plan": {
+    "name": "demo_stabilize_config",
+    "goal": "Stabilizzare la configurazione di config.yaml per evitare restart manuali ripetuti.",
+    "steps": [
+      {
+        "id": "step1",
+        "title": "Analizza config.yaml",
+        "description": "Leggi config.yaml e identifica i parametri instabili."
+      },
+      {
+        "id": "step2",
+        "title": "Applica fix demo",
+        "description": "Applica un fix demo e verifica che il servizio riparta correttamente."
+      }
+    ]
+  }
+}

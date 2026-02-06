@@ -1,0 +1,10 @@
+{
+  "name": "ade-demo-suite",
+  "version": "0.3.0",
+  "description": "ADE Demo Suite - Local Workspace",
+  "scripts": {
+    "start:backend": "uvicorn backend.main:app --host 0.0.0.0 --port 8088 --reload",
+    "start:ui": "echo 'UI Start Stub - In a real scenario this would run vite/next' && exit 0"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,45 @@
+{
+  "id": "scenario1_observer",
+  "title": "Observer workflow: config.yaml + docker-compose restart",
+  "description": "Simula una giornata di lavoro in cui il dev modifica ripetutamente config.yaml e riavvia i container, permettendo all'Observer di riconoscere il pattern.",
+  "events": [
+    {
+      "t": 0,
+      "type": "editor_focus",
+      "payload": {
+        "file": "config.yaml"
+      }
+    },
+    {
+      "t": 2,
+      "type": "file_edit",
+      "payload": {
+        "file": "config.yaml",
+        "change": "tweak parameter X"
+      }
+    },
+    {
+      "t": 5,
+      "type": "terminal_focus",
+      "payload": {
+        "cmd": "docker-compose restart"
+      }
+    },
+    {
+      "t": 6,
+      "type": "command_run",
+      "payload": {
+        "cmd": "docker-compose restart",
+        "status": "ok"
+      }
+    },
+    {
+      "t": 10,
+      "type": "observer_hint",
+      "payload": {
+        "message": "Pattern rilevato: modifica config.yaml + docker-compose restart",
+        "suggestion_id": "demo_automate_restart"
+      }
+    }
+  ]
+}

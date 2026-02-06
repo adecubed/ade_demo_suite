@@ -1,0 +1,29 @@
+body {
+    background-color: #020617;
+    color: #d1d5db;
+    font-family: 'Fira Code', monospace;
+    margin: 0;
+}
+.console-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+header {
+    padding: 1rem;
+    border-bottom: 1px solid #1f2937;
+    font-weight: bold;
+}
+.log-view {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+}
+input {
+    background: #0f172a;
+    border: none;
+    border-top: 1px solid #1f2937;
+    color: white;
+    padding: 1rem;
+    outline: none;
+}

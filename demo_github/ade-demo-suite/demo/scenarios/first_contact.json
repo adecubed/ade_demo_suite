@@ -1,0 +1,24 @@
+{
+  "id": "scenario_001",
+  "name": "First Contact",
+  "description": "Demonstrates basic console interaction and observer detection.",
+  "steps": [
+    {
+      "action": "console_exec",
+      "command": "ade-state",
+      "expected_output": "OPERATIONAL"
+    },
+    {
+      "action": "wait",
+      "duration": 2000
+    },
+    {
+      "action": "inject_event",
+      "event": {
+        "source": "FSWatcher",
+        "kind": "FS_CHANGE",
+        "payload": { "path": "demo/sandbox/test.txt" }
+      }
+    }
+  ]
+}

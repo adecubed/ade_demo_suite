@@ -1,0 +1,18 @@
+{
+  "id": "scenario3_memory",
+  "title": "Memory: ricordare decisioni operative",
+  "description": "Dimostra come la memoria demo conserva una decisione e la ripropone quando il pattern si ripete.",
+  "memory_items": [
+    {
+      "key": "policy_avoid_peak_restarts",
+      "content": "Evitare restart di docker-compose durante le ore di picco (09:00-11:00, 15:00-17:00).",
+      "tags": ["policy", "restart", "observer"]
+    }
+  ],
+  "queries": [
+    {
+      "t": 0,
+      "query": "restart docker-compose peak hours"
+    }
+  ]
+}
