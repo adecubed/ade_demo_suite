@@ -47,7 +47,7 @@ This demo presents, in a **scripted and deterministic way**:
 
 ```bash
 # Clone repository
-git clone https://github.com/TheMemesclub/adedemo
+git clone https://github.com/adecubed/ade-demo_suite
 cd adedemo/projects/demo_github/ade-demo-suite
 
 # Install dependencies
