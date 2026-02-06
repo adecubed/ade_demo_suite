@@ -1,6 +1,4 @@
-Ecco il README.md completo da copiare e incollare:
 
-```markdown
 # ADE Demo Suite
 
 **A vision demo for an AI-native development control layer**
