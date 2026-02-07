@@ -10,7 +10,7 @@
 
 ## What is ADE?
 
-**ADE (Autonomus Development Engine)** is a companion environment that sits next to your existing tools and helps you:
+**ADE (Autonomous Development Engine)** is a companion environment that sits next to your existing tools and helps you:
 
 - **See** what's happening (Observer)
 - **Decide** what to do next (Forge / Planner)
